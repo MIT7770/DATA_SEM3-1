@@ -16,6 +16,14 @@ class usercontroller extends Controller
         return view('listing',['users' => $userdata]); // pass data to view
     }
 
+
+
+    public function pagination(){
+        $userdata = User::paginate(2); // get all data from user table with pagination
+
+        return view('pagination',['users' => $userdata]);
+    }
+
 }
 
 
