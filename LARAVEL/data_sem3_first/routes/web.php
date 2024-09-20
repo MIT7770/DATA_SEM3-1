@@ -20,3 +20,18 @@ Route::get('/listing',[usercontroller::class, 'listing']) -> name('userlisting')
 
 
 Route::get('/pagination',[usercontroller::class,'pagination']); // call pagination function from usercontroller class and give name to route
+
+
+
+Route::get('/insert', function () {
+    return view('insert');
+}); // return insert view
+
+Route::post('/insert',[usercontroller::class, 'insert']) -> name('insertdata'); // call insert function from usercontroller class and give name to route
+
+
+
+
+
+
+

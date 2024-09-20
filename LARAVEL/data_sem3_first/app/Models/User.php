@@ -22,6 +22,10 @@ class User extends Authenticatable
         'password',
     ];
 
+        // Disable timestamps
+        public $timestamps = false; 
+
+
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -41,7 +45,7 @@ class User extends Authenticatable
     {
         return [
             'email_verified_at' => 'datetime',
-            'password' => 'hashed',
+            // 'password' => 'hashed', // this will stope the password from being hashed
         ];
     }
 }

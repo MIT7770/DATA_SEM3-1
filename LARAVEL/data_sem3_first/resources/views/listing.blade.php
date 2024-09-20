@@ -12,9 +12,9 @@
             <th>Email</th>
             <th>Password</th>
         </tr>
-        @foreach($users as $key => $user) // Loop through the users array
+        @foreach($users as $key => $user) <!-- // Loop through the users array -->
         <tr>
-            <td>{{$user -> name}}</td> // Display the name of the user
+            <td>{{$user -> name}}</td> <!-- // Display the name of the user -->
             <td>{{$user -> email}}</td>
             <td>{{$user -> password}}</td>
         </tr>
